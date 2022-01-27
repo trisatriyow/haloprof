@@ -1,6 +1,7 @@
 const {Appointment} = require('../models')
 const {User} = require('../models')
 const {Doctor} = require('../models')
+const {Profile} = require('../models')
 
 class Controller{
     static tabelApp(req, res){
@@ -13,28 +14,26 @@ class Controller{
             .catch((err)=>{
                 res.send(err)
             })
-        // Appointment.findAll({
-        //     include: [
-        //       {
-        //         model: Doctor,
-        //         include: [Appointment, User]
-        //       },
-        //       {
-        //         model: User,
-        //         include: {
-        //           model: Appointment,
-        //           include: {
-        //             model: Doctor,
-        //             include: [Appointment, User]
-        //           }
-        //         }
-        //       }
-        //     ]
-        //   })
-        //     .then((data)=>{
-        //         console.log(data)
-        //         res.send(data)
-        //     })
+    }
+    static doctorList(req, res){
+        Doctor.findAll()
+            .then((data)=>{
+                res.send(data)
+            })
+            .catch((err)=>{
+                res.send(err)
+            })
+    }
+    static userProfileList(req, res){
+        User.findAll({include:{
+            model: Profile
+        }})
+            .then((data)=>{
+                res.send(data)
+            })
+            .catch((err)=>{
+                res.send(err)
+            })
     }
 }
 
