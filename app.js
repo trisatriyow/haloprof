@@ -1,4 +1,5 @@
 const express = require("express");
+const Controller = require("../Nodejs-Passport-Login/controllers");
 const app = express();
 const port = 3000;
 app.set("view engine", "ejs");
@@ -7,6 +8,8 @@ app.use(express.urlencoded({ extended: true }));
 app.get("/", (req, res) => {
   res.send("Hello World!");
 });
+app.get('/doctorList', Controller.doctorList)
+app.get('/userProfileList', Controller.userProfileList)
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
