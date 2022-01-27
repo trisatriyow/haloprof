@@ -1,7 +1,8 @@
 const {Appointment} = require('../models')
 const {User} = require('../models')
-const {Doctor} = require('../models')
+const {Docter} = require('../models')
 const {Profile} = require('../models')
+// const bcrypt = require('bcrypt')
 
 class Controller{
     static tabelApp(req, res){
@@ -16,8 +17,9 @@ class Controller{
             })
     }
     static doctorList(req, res){
-        Doctor.findAll()
+        Docter.findAll()
             .then((data)=>{
+                console.log(data)
                 res.send(data)
             })
             .catch((err)=>{
@@ -35,6 +37,12 @@ class Controller{
                 res.send(err)
             })
     }
+    // static postLogin(req, res){
+    //     let {email, password} = req.body
+    //     console.log(email, password)
+    //     bcrypt.compare(password, user.password)
+
+    // }
 }
 
 module.exports = Controller;
