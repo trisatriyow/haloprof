@@ -1,0 +1,62 @@
+[
+  {
+    "name" : "Dr.Ketut Santika",
+    "phoneNumber" : 62896655222,
+    "spesialisasi" : "Dokter Umum"
+  },
+  {
+    "name" : "Dr.Junia Kirana",
+    "phoneNumber" : 6285556873,
+    "spesialisasi" : "Dokter Umum"
+  },
+  {
+    "name" : "Dr.Dimas Ega Sp.KK",
+    "phoneNumber" : 6211316823473,
+    "spesialisasi" : "Kulit dan Kelamin"
+  },
+  {
+    "name" : "Drg.Adisti Ega",
+    "phoneNumber" : 6223113126873,
+    "spesialisasi" : "Dokter Gigi"
+  },
+  {
+    "name" : "Drg.Ega Abian",
+    "phoneNumber" : 623455353,
+    "spesialisasi" : "Kebidanan Kandungan"
+  },
+  {
+    "name" : "Drg.Made Julian Sp.JP",
+    "phoneNumber" : 623455353,
+    "spesialisasi" : "Jantung dan Pembulu Darah"
+  },
+  {
+    "name" : "Drg.Henny Rubiah",
+    "phoneNumber" : 6286975512,
+    "spesialisasi" : "Dokter Gigi"
+  },
+  {
+    "name" : "Dr.Kirana Habidah",
+    "phoneNumber" : 6285556873,
+    "spesialisasi" : "Dokter Umum"
+  },
+  {
+    "name" : "Dr.Delviana Mustika",
+    "phoneNumber" : 6285697855,
+    "spesialisasi" : "Dokter Umum"
+  },
+  {
+    "name" : "Dr.Egi Maulana Sp.KK",
+    "phoneNumber" : 6211316823473,
+    "spesialisasi" : "Kulit dan Kelamin"
+  },
+  {
+    "name" : "Drg.Habis Daud",
+    "phoneNumber" : 6234523425353,
+    "spesialisasi" : "Kebidanan Kandungan"
+  },
+  {
+    "name" : "Drg.Abdul Rozak Sp.JP",
+    "phoneNumber" : 623455322253,
+    "spesialisasi" : "Jantung dan Pembulu Darah"
+  }
+]
