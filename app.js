@@ -1,7 +1,6 @@
 const nodemailer = require("nodemailer");
 const express = require("express");
 const Controller = require("./controllers");
-const sendEmail = require("./nodemailer");
 const app = express();
 const port = 3000;
 app.set("view engine", "ejs");
