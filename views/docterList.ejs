@@ -47,7 +47,7 @@
             <td class="text-center"><%= el.phoneNumber %> </td>
             <td class="text-center"><%= el.spesialisasi %> </td>
             <td class="text-center"><%= el.count %> </td>
-            <td class="text-center"><a class="btn btn-primary" href="#" role="button">Appointment</a></td>
+            <td class="text-center"><a class="btn btn-primary" href="/appointment/<%=memory.UserId%>/doctors/<%= el.id %>" role="button">Appointment</a></td>
           </tr>
   
         <%}) %> 
