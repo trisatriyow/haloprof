@@ -9,6 +9,7 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
+      Docter.hasMany(models.Appointment, { foreignKey: "DoctorId" });
     }
   }
   Docter.init(

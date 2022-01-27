@@ -1,18 +1,45 @@
+const nodemailer = require("nodemailer");
 const express = require("express");
-const Controller = require("../Nodejs-Passport-Login/controllers");
+const Controller = require("./controllers");
+const sendEmail = require("./nodemailer");
 const app = express();
 const port = 3000;
 app.set("view engine", "ejs");
 app.use(express.urlencoded({ extended: true }));
-
-app.get("/", (req, res) => {
-  res.send("Hello World!");
-});
-app.get('/doctorList', Controller.doctorList)
-app.get('/userProfileList', Controller.userProfileList)
+app.get("/", Controller.login);
+app.post("/", Controller.checkLogin);
+app.get("/doctorList", Controller.doctorList);
+app.get("/userProfileList", Controller.userProfileList);
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`);
+});
+let localStorage;
+if (typeof localStorage === "undefined" || localStorage === null) {
+  var LocalStorage = require("node-localstorage").LocalStorage;
+  localStorage = new LocalStorage("./scratch");
+}
+let transporter = nodemailer.createTransport({
+  service: "gmail",
+  auth: {
+    user: "haloprofhacktiv8@gmail.com",
+    pass: "hacktiv8",
+  },
+});
+
+let mailOptions = {
+  from: "haloprofhacktiv8@gmail.com",
+  to: localStorage.getItem("email"),
+  subject: "Halo Prof Appointment",
+  text: "Confirmation about appointment Halo Prof",
+};
+
+transporter.sendMail(mailOptions, (err, info) => {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log("Email Sent:" + info.response);
+  }
 });
 
 // if (process.env.NODE_ENV !== 'production') {
@@ -58,8 +85,8 @@ app.listen(port, () => {
 //   res.render('login.ejs')
 // })
 
-// app.post('/login', 
-// // checkNotAuthenticated, 
+// app.post('/login',
+// // checkNotAuthenticated,
 // passport.authenticate('local', {
 //   successRedirect: '/',
 //   failureRedirect: '/login',
