@@ -1,27 +1,32 @@
 [
   {
-    "username": "mahmud",
+    "name": "Mahmudin Bayangkara",
     "UserId": 1,
-    "age": 15
+    "age": 15,
+    "gender": "Male"
   },
   {
-    "username": "karina",
+    "name": "Karina Maharani",
     "UserId": 2,
-    "age": 20
+    "age": 20,
+    "gender": "Female"
   },
   {
-    "username": "maiden",
+    "name": "Maiden Kristina",
     "UserId": 3,
-    "age": 50
+    "age": 50,
+    "gender": "Female"
   },
   {
-    "username": "jamal",
+    "name": "Jamaludin Samudra",
     "UserId": 4,
-    "age": 28
+    "age": 28,
+    "gender": "Male"
   },
   {
-    "username": "paijo",
+    "name": "Paijo Pangestu",
     "UserId": 5,
-    "age": 19
+    "age": 19,
+    "gender": "Male"
   }
 ]

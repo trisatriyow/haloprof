@@ -1,62 +1,74 @@
 [
   {
     "name" : "Dr.Ketut Santika",
-    "phoneNumber" : 62896655222,
-    "spesialisasi" : "Dokter Umum"
+    "phoneNumber" : "08125684530",
+    "spesialisasi" : "Dokter Umum",
+    "count" : 0
   },
   {
     "name" : "Dr.Junia Kirana",
-    "phoneNumber" : 6285556873,
-    "spesialisasi" : "Dokter Umum"
+    "phoneNumber" : "085869533226",
+    "spesialisasi" : "Dokter Umum",
+    "count" : 0
   },
   {
     "name" : "Dr.Dimas Ega Sp.KK",
-    "phoneNumber" : 6211316823473,
-    "spesialisasi" : "Kulit dan Kelamin"
+    "phoneNumber" : "0814355530",
+    "spesialisasi" : "Kulit dan Kelamin",
+    "count" : 0
   },
   {
     "name" : "Drg.Adisti Ega",
-    "phoneNumber" : 6223113126873,
-    "spesialisasi" : "Dokter Gigi"
+    "phoneNumber" : "0812534520",
+    "spesialisasi" : "Dokter Gigi",
+    "count" : 0
   },
   {
     "name" : "Drg.Ega Abian",
-    "phoneNumber" : 623455353,
-    "spesialisasi" : "Kebidanan Kandungan"
+    "phoneNumber" : "081288860",
+    "spesialisasi" : "Kebidanan Kandungan",
+    "count" : 0
   },
   {
     "name" : "Drg.Made Julian Sp.JP",
-    "phoneNumber" : 623455353,
-    "spesialisasi" : "Jantung dan Pembulu Darah"
+    "phoneNumber" : "084412534520",
+    "spesialisasi" : "Jantung dan Pembulu Darah",
+    "count" : 0
   },
   {
     "name" : "Drg.Henny Rubiah",
-    "phoneNumber" : 6286975512,
-    "spesialisasi" : "Dokter Gigi"
+    "phoneNumber" : "08123534630",
+    "spesialisasi" : "Dokter Gigi",
+    "count" : 0
   },
   {
     "name" : "Dr.Kirana Habidah",
-    "phoneNumber" : 6285556873,
-    "spesialisasi" : "Dokter Umum"
+    "phoneNumber" : "08123764730",
+    "spesialisasi" : "Dokter Umum",
+    "count" : 0
   },
   {
     "name" : "Dr.Delviana Mustika",
-    "phoneNumber" : 6285697855,
-    "spesialisasi" : "Dokter Umum"
+    "phoneNumber" : "08123456330",
+    "spesialisasi" : "Dokter Umum",
+    "count" : 0
   },
   {
     "name" : "Dr.Egi Maulana Sp.KK",
-    "phoneNumber" : 6211316823473,
-    "spesialisasi" : "Kulit dan Kelamin"
+    "phoneNumber" : "081253363530",
+    "spesialisasi" : "Kulit dan Kelamin",
+    "count" : 0
   },
   {
     "name" : "Drg.Habis Daud",
-    "phoneNumber" : 6234523425353,
-    "spesialisasi" : "Kebidanan Kandungan"
+    "phoneNumber" : "081235320",
+    "spesialisasi" : "Kebidanan Kandungan",
+    "count" : 0
   },
   {
     "name" : "Drg.Abdul Rozak Sp.JP",
-    "phoneNumber" : 623455322253,
-    "spesialisasi" : "Jantung dan Pembulu Darah"
+    "phoneNumber" : "08123532530",
+    "spesialisasi" : "Jantung dan Pembulu Darah",
+    "count" : 0
   }
 ]
