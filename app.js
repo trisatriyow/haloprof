@@ -28,7 +28,13 @@ app.use(
 app.use(passport.initialize());
 app.use(passport.session());
 app.use(methodOverride("_method"));
-app.get("/", checkAuthenticated, Controller.userProfileList);
+app.get("/", checkAuthenticated, 
+Controller.userProfileList 
+// async (req, res)=>{
+//   let user =  await req.user;
+//   let name = JSON.parse(JSON.stringify(user)).username;
+//   res.render('index.ejs', { name })}
+);
 app.get("/login", checkNotAuthenticated, (req, res) => {
   res.render("login.ejs");
 });
@@ -73,12 +79,13 @@ app.post("/register", checkNotAuthenticated, (req, res) => {
     });
 });
 
-app.get("/doctorList", Controller.doctorList);
+app.get("/doctorList",checkAuthenticated, Controller.doctorList);
 app.get(
   "/appointment/:UserId/doctors/:DoctorId",
+  checkAuthenticated,
   Controller.confirmAppointment
 );
-app.get("/userProfileList", Controller.userProfileList);
+// app.get("/userProfileList",checkAuthenticated, Controller.userProfileList);
 app.delete("/logout", (req, res) => {
   req.logOut();
   res.redirect("/login");

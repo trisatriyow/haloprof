@@ -39,8 +39,11 @@ class Controller {
         res.send(err);
       });
   }
-  static userProfileList(req, res) {
-    User.findAll({
+  static async userProfileList(req, res) {
+    let user =  await req.user;
+    let id = JSON.parse(JSON.stringify(user)).id;
+    User.findOne({
+      where:{id},
       include: {
         model: Profile,
       },
@@ -54,12 +57,14 @@ class Controller {
   }
   static confirmAppointment(req, res) {
     const { DoctorId, UserId } = req.params;
+    console.log(DoctorId,  UserId)
     Profile.findAll({
       include: {
         model: Docter,
       },
     })
       .then((data) => {
+        console.log(data)
         let mailOptions = {
           from: "haloprofhacktiv8@gmail.com",
           to: memory.email,
@@ -74,6 +79,7 @@ class Controller {
             console.log("Email Sent:" + info.response);
           }
         });
+        console.log(data)
         res.render("appointment", { data });
       })
       .catch((err) => {
